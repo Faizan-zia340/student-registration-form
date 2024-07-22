@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Management</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---- form start ---->
+    <div class="formDiv">
+     <form class="form" id="form">
+       <div id='headdiv'> <h2 class="formHeading">Student Data Form <img width="30px" src="images/formicon.png" alt=""></h2></div>
+         
+        <input type="text" placeholder="Enter Your Name" id="nameInput">
+         <input type="text" placeholder="Enter Your Father Name" id="fnameInput">
+         <input type="email" placeholder="Enter Your Email" id="emailInput">
+         <input type="text" placeholder="Enter Your Age" id="ageInput">
+         <select id="selectCourse">
+            <option disabled selected>Select Course</option>
+            <option value="Web and Mobile App Development">Web and Mobile App Development</option>
+            <option value="Python Programming">Python Programming</option>
+            <option value="Graphic Designing">Graphic Designing</option>
+            <option value="Mobile Reparing">Mobile Repairing</option>
+            <option value="Cyber Security">Cyber Security</option>
+         </select>
+         
+         <button class="formbtn" id="submitBtn" type="button">Submit</button>
+        
+     </form>
+    </div>
+    <!----- form end ----->
+
+    <!-- table start -->
+     <div class="tableDiv">
+       <table>
+         <thead class="thead">
+            <tr>
+                <th>S.No</th>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Delete</th>
+            </tr>
+         </thead>
+         <tbody id="tbody">
+
+         </tbody>
+       </table>
+    </div>
+    <!-- table end -->
+
+    <!-- No Data Icon Start -->
+    <!-- <div id="dataiconDiv"><img src="bg.jpg" alt="image"></div> -->
+    <!-- No Data Icon End -->
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
