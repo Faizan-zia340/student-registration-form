@@ -1,5 +1,4 @@
-
-var dataiconDiv = document.getElementById('dataiconDiv')
+// var dataiconDiv = document.getElementById('dataiconDiv')
 var form = document.getElementById('form')
 var tbody = document.getElementById('tbody')
 var nameInput = document.getElementById('nameInput')
